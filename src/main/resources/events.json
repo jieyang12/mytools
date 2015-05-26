@@ -1,0 +1,16 @@
+[
+	{"type":"CIBuild", "name":"assembler_download_from_maven_repo", "matcher":"(?<date>.*)\\[INFO] --- assembler-maven-plugin.*?---", "isTerminate":"false"},
+	
+	{"type":"CIBuild", "name":"getRaptorDefaultConfigDenpendency", "matcher":"(?<date>.*)\\[INFO] start to process configurations.*", "isTerminate":"false"},
+	
+	{"type":"CIBuild", "name":"Unpack raptor default configurations", "matcher":"(?<date>.*)\\[DEBUG] Found raptorDefaultConfigDependency.*", "isTerminate":"false"},
+	
+	{"type":"CIBuild", "name":"merge_config_start", "matcher":"(?<date>.*)\\[DEBUG] Start to merge configurations.*", "isTerminate":"false"},
+	{"type":"CIBuild", "name":"merge_app_config_start", "matcher":"(?<date>.*)\\[INFO] Start to merge application configurations.*", "isTerminate":"false"},
+	{"type":"CIBuild", "name":"merge_cos_config", "matcher":"(?<date>.*)\\[DEBUG] Start merging common configurations with different CoS configurations.*", "isTerminate":"false"},
+	{"type":"CIBuild", "name":"copy_cos_config", "matcher":"(?<date>.*)\\[DEBUG] Start copying common configurations for different additional CoS.*", "isTerminate":"false"},
+	
+	{"type":"CIBuild", "name":"copy merging result", "matcher":"(?<date>.*)\\[DEBUG] Complete to merge configurations.*", "isTerminate":"false"},
+	
+	{"type":"CIBuild", "name":"completed merge config", "matcher":"(?<date>.*)\\[INFO] Completed configurations merge.*", "isTerminate":"true"}
+]
